@@ -1,0 +1,25 @@
+<div class="map">
+  {% comment %}
+  {% include 'header' %}
+  {% endcomment %}
+  <div class="title">
+    Hello {{ data.user }},<br />You've recently bought {{ data.product_name }}, what do you think about it?
+  </div>
+
+  <div class="yotpo-readonly-start"></div>
+
+  {% comment %}
+  {% include 'review_request(readonly)' %}
+  {% endcomment %}
+
+  <div class="yotpo-readonly-end"></div>
+
+  <div class="too-soon">
+    Too soon? If you have not received the product yet {{ "Click Here!" | link_to: "www.link.com" }}
+  </div>
+
+  <div class="thank-you">
+    We really appreciate your feedback and hope to see you again soon.<br />
+    Thank you from {{ data.store_name | link_to: "www.store.com" }}
+  </div>
+</div>

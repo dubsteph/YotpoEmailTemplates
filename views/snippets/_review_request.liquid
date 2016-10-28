@@ -1,0 +1,14 @@
+{% if formless %}
+     {% include 'star_links' %}
+{% else %}
+    {% if formless_on_outlook_enabled %}
+        <if-mso>
+            {% include 'star_links' %}
+        </if-mso>
+        <if-not-mso>
+            {% include 'review_form' %}
+        </if-not-mso>
+    {% else %}
+        {% include 'review_form' %}
+    {% endif %}
+{% endif %}

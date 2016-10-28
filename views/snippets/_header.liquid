@@ -1,0 +1,18 @@
+{% if landing_page_link %}
+  <div class="broken-email">
+     If this email is not displaying correctly, please {{ "Click here" | link_to: landing_page_link }} to fill out the form.
+ </div>
+{% endif %}
+
+{% if store_logo %}
+ <div class="header-logo" style="text-align: center;">
+   <a href="{{store_logo_url}}">
+    <img class="logo-img" src="{{store_logo}}">
+    </a>
+ </div>
+ {% else %}
+ <div class="logo">
+    <img src="//s3.amazonaws.com/yotpo-images-production/images/store_def_logo.png" alt="Logo" />
+ </div>
+{% endif %}
+<br/>
