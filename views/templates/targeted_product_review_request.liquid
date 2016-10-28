@@ -1,25 +1,23 @@
 <div class="map">
-  {% comment %}
-  {% include 'header' %}
-  {% endcomment %}
+
+  {% include '../snippets/header' %}
+
   <div class="title">
     Hello {{ data.user }},<br />You've recently bought {{ data.product_name }}, what do you think about it?
   </div>
 
+  {% comment %} STARTS READ-ONLY SECTION {% endcomment %}
   <div class="yotpo-readonly-start"></div>
-
-  {% comment %}
-  {% include 'review_request(readonly)' %}
-  {% endcomment %}
-
+    {% include '../snippets/review_request' %}
   <div class="yotpo-readonly-end"></div>
+  {% comment %} ENDS READ-ONLY SECTION {% endcomment %}
 
   <div class="too-soon">
-    Too soon? If you have not received the product yet {{ "Click Here!" | link_to: "www.link.com" }}
+    Too soon? If you have not received the product yet {{ "Click Here!" | link_to: data.store_link }}
   </div>
 
   <div class="thank-you">
     We really appreciate your feedback and hope to see you again soon.<br />
-    Thank you from {{ data.store_name | link_to: "www.store.com" }}
+    Thank you from {{ data.store_name | link_to: data.store_link }}
   </div>
 </div>

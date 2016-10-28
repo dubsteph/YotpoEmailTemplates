@@ -1,9 +1,19 @@
 {
-  "unsubscribe_url": "www.unsubscribe.com",
-  "white_label": null,
+  "if-mso": false,
+  "if-not-mso": false,
+  "formless": false,
+  "formless_call_to_action": "https://www.bvaccel.com",
+  "formless_on_outlook_enabled": false,
+  "landing_page_link": "https://www.bvaccel.com",
+  "powered_by_url": "https://www.yotpo.com",
+  "product_name": "Ecommerce Online Store Front",
+  "review_form_fields": false,
+  "store_name": "BVAccel",
+  "store_link": "https://www.bvaccel.com",
+  "store_logo": "http://sdama.org/wp-content/uploads/2015/05/BV-Accel-logo-san-diego-ama-art-of-marketing-conference-2015.jpg",
+  "store_logo_url": "https://www.bvaccel.com",
+  "unsubscribe_url": "https://www.bvaccel.com",
+  "url_params": [],
   "user": "Sam Webb",
-  "product_name": "VStroker",
-  "store_name": "Fleshlight",
-  "landing_page_link": "www.landingpage.com",
-  "formless_call_to_action": "www.idk.com"
+  "white_label": null
 }

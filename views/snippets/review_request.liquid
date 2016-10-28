@@ -1,0 +1,18 @@
+{% comment %}
+  THIS FILE IS READ ONLY! DO NOT EDIT!
+{% endcomment %}
+
+{% if formless %}
+     {% include '../snippets/star_links' %}
+{% else %}
+    {% if formless_on_outlook_enabled %}
+        <if-mso>
+            {% include '../snippets/star_links' %}
+        </if-mso>
+        <if-not-mso>
+            {% include '../snippets/review_form' %}
+        </if-not-mso>
+    {% else %}
+        {% include '../snippets/review_form' %}
+    {% endif %}
+{% endif %}
