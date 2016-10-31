@@ -7,10 +7,10 @@
     {% comment %} START READ ONLY {% endcomment %}
     <div class="yotpo-readonly-start"></div>
 
-    {% include '../snippets/review_request' %}
+    {% include 'review_request(readonly)' %}
 
     <div class="yotpo-readonly-end"></div>
-    {% comment %} END READ ONLY {% endcomment %}
+    {% comment %} End READ ONLY {% endcomment %}
 
     <!-- if feature enabled -->
     {% if data.promoted_products_enabled %}
