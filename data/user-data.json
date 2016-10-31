@@ -1,4 +1,10 @@
 {
+  "comment_content": "We appreciate your comment and thank you for naming us \"the best agency in the world.\"",
+  "coupon_code": "123456",
+  "coupon_discount": "15%",
+  "coupon_link": "https://www.bvaccel.com",
+  "coupon_thank_you": "Thank you for siging up for blah, have this coupon.",
+  "expiration_date": "06/06/42",
   "if-mso": false,
   "if-not-mso": false,
   "formless": false,
@@ -11,6 +17,7 @@
   "product_url": "https://www.bvaccel.com",
   "promoted_products_enabled": true,
   "review_form_fields": false,
+  "store_email": "sam@bvaccel.com",
   "store_name": "BVAccel",
   "store_link": "https://www.bvaccel.com",
   "store_logo": "http://sdama.org/wp-content/uploads/2015/05/BV-Accel-logo-san-diego-ama-art-of-marketing-conference-2015.jpg",

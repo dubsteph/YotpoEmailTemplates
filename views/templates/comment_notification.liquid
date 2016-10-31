@@ -1,0 +1,33 @@
+<div class="main-div">
+<table class="main-table">
+   <tbody>
+      <tr>
+         <td>
+            <div>
+               <span class="comment-header">
+                 {% include '../snippets/header' %}
+                  <p>{{ data.store_name | link_to: data.store_url }} has commented on your review</p>
+               </span>
+            </div>
+            <div class="main-form">
+               <span class="content-body">
+                  <p>Hello {{ data.user_name }},<br>
+                 {{ data.store_name | link_to: data.store_url }} received your review on {{ data.product_name | link_to: product_url }} and responded:</p>
+                  <br>
+                  <div class="comment">{{ data.comment_content }}</div>
+                  <br>Thanks again for the review, and we hope to see you again soon!<br>
+                  <br>{{ data.store_name | link_to: data.store_url }}
+                  <br>
+                  {{ data.store_email | link_to: data.store_email }}
+               </span>
+              <div class="promoted-products">
+                {% if promoted_products_enabled %}
+			      {% include '../snippets/promoted_products' %}
+			    {% endif %}
+              </div>
+            </div>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<div>

@@ -1,0 +1,104 @@
+<table width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;border:1px #d7d7d7 solid">
+   <tr>
+      <td colspan="3">
+        {% include '../snippets/header' %}
+      </td>
+   </tr>
+   <tbody>
+      <tr height="45"></tr>
+      <tr>
+         <td width="30"></td>
+         <td width="538" style="color:#525252;font-size:22px;font-family:Arial, Helvetica, sans-serif;" align="center">{{data.coupon_thank_you}}</td>
+         <td width="30"></td>
+      </tr>
+      <tr height="29"></tr>
+      <tr>
+         <td width="30"></td>
+         <td height="176" width="90%">
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td width="15"></td>
+                     <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                           <tbody>
+                              <tr height="28">
+                                 <td>
+                                    <table height="28" cellspacing="0" width="100%">
+                                       <tbody>
+                                        <tr height="13"></tr>
+                                        <tr height="15">
+                                          <td style="vertical-align:top;border-top:1px #b6b6b6 dashed;border-left:1px #b6b6b6 dashed;border-right:1px #b6b6b6 dashed;background-color:#f8f8f8;"></td>
+                                          <td style="background-color:white" width="14"></td>
+                                        </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr style="vertical-align:top">
+                                 <td colspan="2">
+                                    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f8f8f8" style="border-left:1px #b6b6b6 dashed;">
+                                       <tbody>
+                                          <tr>
+                                             <td align="center" style="line-height:70px;font-weight:700;font-size:67px;color:#2f84ed;letter-spacing:-2px;font-family:'Myriad Pro', Verdana, Arial;border-right:1px #b6b6b6 dashed;">
+                                                {{data.coupon_discount}}
+                                             </td>
+                                             <td width="16" style="background-color:white;"></td>
+                                          </tr>
+                                          <tr height="35">
+                                             <td style="border-right:1px #b6b6b6 dashed;"></td>
+                                             <td width="16" style="background-color:white;"></td>
+                                          </tr>
+                                          <tr>
+                                             <td align="center" style="font-weight:700;font-size:20px;color:#2f84ed;font-family:'Myriad Pro', Verdana, Arial;letter-spacing:1px;border-right:1px #b6b6b6 dashed;">
+                                                Code: {{data.coupon_code}}
+                                             </td>
+                                             <td width="16" style="background-color:white;"></td>
+                                          </tr>
+                                          <tr height="35">
+                                             <td style="border-bottom:1px #b6b6b6 dashed;border-right:1px #b6b6b6 dashed;"></td>
+                                             <td width="16" style="background-color:white;"></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td width="30"></td>
+      </tr>
+      <tr height="26"></tr>
+      <tr align="center">
+         <td width="30"></td>
+         <td width="538" align="center" valign="middle">
+            <table border="0" cellpadding="0" cellspacing="0" align="center" height="44">
+               <tbody>
+                  <tr valign="middle" height="44">
+                     <td width="155"></td>
+                     <td width="230" valign="middle" align="center" height="44" bgcolor="#fec600" style="border-radius:7px;">
+                        <a href="{{data.coupon_link}}" style="font-weight:700;color:#56575f;font-size:16px;text-shadow:#235679 0 -1px 0;font-family:'Myriad Pro', Verdana, Arial;text-decoration:none;text-transform:uppercase;padding:11px 0;width:231px;text-align:center;">Let's Shop</a>
+                     </td>
+                     <td width="155"></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td width="30"></td>
+      </tr>
+      {% if expiration_date %}
+      <tr height="27"></tr>
+      <tr>
+         <td width="30"></td>
+         <td width="538" align="center" style="font-size:12px;color:#969796;font-family:Verdana, Arial;">
+            This coupon expires at: {{data.expiration_date}}
+         </td>
+         <td width="30"></td>
+      </tr>
+      {% endif %}
+      <tr height="27"></tr>
+   </tbody>
+</table>
