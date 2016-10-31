@@ -1,0 +1,53 @@
+{% comment %} START READ ONLY 1 {% endcomment %}
+<div class="yotpo-readonly-start"></div>
+<div class="main-form">
+   <form accept-charset="UTF-8" action="{{data.submit_url}}" method="get" style="text-align:center" target="_blank" onsubmit="return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);">
+      <table width="100%">
+         <tbody>
+            <tr>
+               <td></td>
+               <td>
+                  <table cellspacing="0" cellpadding="0" border="0" style="width:100%">
+                     <tbody>
+                        <tr>
+                           <td class="y-row-left"> Q: {{ data.question_content }} </td>
+                        </tr>
+                        <tr>
+                           <td class="y-row-left"><i class="y-date-text">{{ data.question_created_at }}</i></td>
+                        </tr>
+                        <tr>
+                           <td class="y-row-right"> </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <hr>
+                           </td>
+                        </tr>
+                        <tr>
+{% comment %} END READ ONLY 1 {% endcomment %}
+                           <td class="title3 yotpo-not-readonly">Write your answer here</td>
+{% comment %} START READ ONLY 2 {% endcomment %}
+                        </tr>
+                        <tr>
+                           <td>
+                              <ul>
+                                 <textarea name="content" cols="40" rows="5" style="font-size:1em;padding-left:3px;min-height:60px;width:99%;border:solid 1px #bababa;font-weight:lighter;font-family:inherit;margin:0px 0px 20px -30px"></textarea>
+                              </ul>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="y-row-right">
+                              <input type="submit" value="Answer">
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+   </form>
+</div>
+<div class="yotpo-readonly-end"></div>
+{% comment %} END READ ONLY 2 {% endcomment %}

@@ -1,0 +1,80 @@
+{% include '../snippets/header' %}
+<div class="main-form" style="padding:0">
+<span style="font-family:Verdana;text-align:left"><br/>
+
+ <p class="p1" style="font-family: Verdana;font-size: 14px;color: #525252;">Hi {{data.user_name}}, A new answer to your question has been received.</p></span><br/>
+   <table width="100%">
+      <tr>
+         <td width="5%"></td>
+         <td width="90%">
+            <table class="table1 main-question-form">
+               <tr>
+                  <td class="y-row-left">Q: {{data.question_content}}</td>
+               </tr>
+               <tr>
+                  <td class="y-row-left"> <i class="y-date-text">{{data.question_date}}</i></td>
+               </tr>
+               <tr>
+                  <td>
+                     <hr/>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <table width="100%">
+                        <tr>
+                           <td width="10%"></td>
+                           <td width="90%" class="y-row-left">A: {{data.answer_content}} </td>
+                        </tr>
+                        <tr>
+                           <td width="10%"></td>
+                           <td width="90%" class="y-row-left"> <i class="y-date-text">{{data.question_date}}</i> </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <hr/>
+                  </td>
+               </tr>
+               <tr height="70px">
+                  <td class="y-row-center"><br/>
+                     <a href="{{data.item_link}}"
+                        style="border: 1px solid #b89405;
+                        padding: 10px 22px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        -moz-border-radius: 6px;
+                        -webkit-border-radius: 6px;
+                        border-radius: 6px;
+                        -moz-background-clip: padding;
+                        -webkit-background-clip: padding-box;
+                        background-clip: padding-box;
+                        background-color: #fdc501;
+                        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
+                        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
+                        box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
+                        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAzMDMwMyIgc3RvcC1vcGFjaXR5PSIwLjA4Ii8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwLjA4Ii8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+                        background-image: -moz-linear-gradient(bottom, rgba(3,3,3,.08) 0%, rgba(255,255,255,.08) 100%);
+                        background-image: -o-linear-gradient(bottom, rgba(3,3,3,.08) 0%, rgba(255,255,255,.08) 100%);
+                        background-image: -webkit-linear-gradient(bottom, rgba(3,3,3,.08) 0%, rgba(255,255,255,.08) 100%);
+                        background-image: linear-gradient(bottom, rgba(3,3,3,.08) 0%, rgba(255,255,255,.08) 100%);
+                        color: #7b660b;
+                        font-size: 16px;
+                        text-shadow: 0 1px 0 rgba(174,136,3,.89);">Go To Product Page</a>
+                  </td>
+            </table>
+         </td>
+         <td width="5%"></td>
+      </tr>
+   </table><br/>
+   <div class="promoted-products">
+    {% if promoted_products_enabled %}
+      {% include '../snippets/promoted_products' %}
+    {% endif %}
+   </div>
+   <div class="content-bottom">
+     <p class="p1" style="margin:0">If you have any other questions visit {{ data.store_name | link_to: data.store_url }}.</p>
+   </div>
+</div>

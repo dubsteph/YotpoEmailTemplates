@@ -1,0 +1,26 @@
+<div class="main-div">
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td>
+                {% if data.landing_page_link %}
+                    <div class="broken-email">
+                       If this email is not displaying correctly, please {{ "Click here" | link_to: data.landing_page_link }} to fill out the form.
+                   </div>
+                {% endif %}
+                    <div>
+                        <span style="color:#525252;font-size:14px">
+                     <p>Hi {{data.user_name}},</p>
+                     <p>A new question was asked about {{data.product_name}}, which you recently bought from our store.</p>
+                     <p>We would very much appreciate it if you could answer it.</p>
+                  </span>
+                    </div>
+                  <div class="yotpo-readonly">{% include '../snippets/answer_form' %}</div>
+                    <div class="content-bottom" style="font-size:11px;letter-spacing:-0.22px">
+                        <p style="margin:0">Thank you from {{ data.store_name | link_to: data.store_url }}.</p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
