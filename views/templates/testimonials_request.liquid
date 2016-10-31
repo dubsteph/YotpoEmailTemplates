@@ -1,0 +1,24 @@
+<div class="map">
+  {% include '../snippets/header' %}
+
+  <div class="title">
+    Hello {{ user_name }},<br />
+    Please fill out the form below and submit your site review, it would be very much appreciated.
+  </div>
+
+  {% comment %} START READ ONLY {% endcomment %}
+  <div class="yotpo-readonly-start"></div>
+
+  {% include '../snippets/review_request' %}
+
+  <div class="yotpo-readonly-end"></div>
+  {% comment %} END READ ONLY {% endcomment %}
+
+  {% if promoted_products_enabled %}
+    {% include 'promoted_products' %}
+  {% endif %}
+
+  <div class="thank-you">
+    Thanks so much and we hope to see you again soon :)<br />{{ store_name | link_to: store_url }}
+  </div>
+</div>

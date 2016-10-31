@@ -7,6 +7,8 @@
   "landing_page_link": "https://www.bvaccel.com",
   "powered_by_url": "https://www.yotpo.com",
   "product_name": "Ecommerce Online Store Front",
+  "product_url": "https://www.bvaccel.com",
+  "promoted_products_enabled": false,
   "review_form_fields": false,
   "store_name": "BVAccel",
   "store_link": "https://www.bvaccel.com",
@@ -14,6 +16,7 @@
   "store_logo_url": "https://www.bvaccel.com",
   "unsubscribe_url": "https://www.bvaccel.com",
   "url_params": [],
+  "verification_link": "https://www.bvaccel.com",
   "user": "Sam Webb",
   "white_label": null
 }

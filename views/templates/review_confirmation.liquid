@@ -1,0 +1,51 @@
+<style type="text/css" media="screen">
+    table,tr,td {
+        padding:0;
+        margin:0;
+    }
+</style>
+
+<table style="
+  width:591px;
+  margin:0pt auto;
+  font-family:Verdana;
+  font-size:13px;
+  color:#6B6D6E;
+  line-height:20px;
+  <% if @rtl %>
+  direction: rtl;"
+>
+
+
+  <tr>
+    <td style="height:3px;background:url('http://s3.amazonaws.com/yotpo-static-images/emails/border_hr.png') repeat-x 0 0;font-size:0;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="font-weight:bold;font-size:17px;color:#005696;vertical-align:bottom;height:23px;letter-spacing:-0.3px;">Hi {{data.user}}</td>
+  </tr>
+  <tr>
+    <td>
+      <p>Thank you for reviewing <a href="{{data.product_url}}">{{data.product_name}}</a> on our store</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {% comment %} START READ ONLY {% endcomment %}
+      <p class="yotpo-readonly">Please verify that you wrote this review by clicking <a href="{{data.verification_link}}">here</a></p>
+      {% comment %} END READ ONLY {% endcomment %}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>We will not show your email address. We ask that you verify the review so that our customers know to trust it.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Thanks,</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;height:63px;vertical-align:bottom;">{{data.store_link}}</td>
+  </tr>
+</table>
