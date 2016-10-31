@@ -1,0 +1,11 @@
+<div id="tableWrapper" >
+  <p>Hello {{data.user}},</p>
+
+<p> Thank you for being part of our community at {{ data.store_name | link_to: data.store_url }}.
+<br /> Please click the link below to confirm your email address.</p>
+  {% comment %} START READ ONLY {% endcomment %}
+  <p><a class="yotpo-readonly" href="{{ data.confirmation_url }}">Confirm email address</a></p>
+  {% comment %} END READ ONLY {% endcomment %}
+  <p>Thank you,
+<br /> {{ data.store_name | link_to: data.store_url }}</p>
+</div>

@@ -1,0 +1,29 @@
+<div class="map">
+    {% include '../snippets/header' %}
+    <div class="title">
+        Hello {{ data.user }},<br />You've recently bought {{ data.product_name }}, what do you think about it?
+    </div>
+
+    {% comment %} START READ ONLY {% endcomment %}
+    <div class="yotpo-readonly-start"></div>
+
+    {% include '../snippets/review_request' %}
+
+    <div class="yotpo-readonly-end"></div>
+    {% comment %} END READ ONLY {% endcomment %}
+
+    <!-- if feature enabled -->
+    {% if data.promoted_products_enabled %}
+        {% include 'promoted_products' %}
+    {% endif %}
+    <!-- end -->
+
+    <div class="too-soon">
+        Too soon? If you have not received the product yet {{ "Click Here!" | link_to: data.link_didnt_get_product_yet }}
+    </div>
+
+    <div class="thank-you">
+        We really appreciate your feedback and hope to see you again soon.<br />
+        Thank you from {{ data.store_name | link_to: data.store_link }}
+    </div>
+</div>
