@@ -1,3 +1,40 @@
+.main-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: inline-block;
+  text-align: left;
+  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  box-shadow: 5px 0 10px hsla(0, 0%, 0%, 0.05);
+  background: white;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 100px 20px 20px;
+  margin: 0;
+}
+
+.main-nav li {
+
+}
+
+.main-nav a {
+  padding: 10px 15px;
+  display: inline-block;
+  color: hsla(0, 0%, 0%, .5);
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+.main-nav a:hover {
+  color: steelblue;
+}
+
+
+/* ONLY COPY FROM BELOW THIS LINE */
+
 body,
 td,
 input,
