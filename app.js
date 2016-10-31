@@ -32,8 +32,9 @@ app.engine('liquid', expressLiquid(options))
 app.use(expressLiquid.middleware)
 
 // Renders the page on visiting home
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   res.locals.data = data
+  res.locals.url = req.path
   res.render('layout')
 })
 

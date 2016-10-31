@@ -8,8 +8,28 @@
 
 </head>
 <body>
+  {% comment %}
+    Navigation is only to make it easier to traverse through the different
+    templates. Do not include the following nav element in your Yotpo code.
+  {% endcomment %}
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/answer_notification_shoppers">Answer Notification Shoppers</a></li>
+      <li><a href="/answer_request_shoppers">Answer Request Shoppers</a></li>
+      <li><a href="/comment_notification">Comment Notification</a></li>
+      <li><a href="/coupons_notification">Coupons Notification</a></li>
+      <li><a href="/mail_after_invoice">Mail After Invoice</a></li>
+      <li><a href="/map_14">Map 14</a></li>
+      <li><a href="/map_21">Map 21</a></li>
+      <li><a href="/question_confirmation">Question Confirmation</a></li>
+      <li><a href="/review_confirmation">Review Confirmation</a></li>
+      <li><a href="/targeted_product_review_request">Targeted Product Review</a></li>
+      <li><a href="/testimonials_request">Testimonials Request</a></li>
+    </ul>
+  </nav>
+
   <div id="content">
-    {% include './templates/answer_notification_shoppers' %}
+    {% include './snippets/template_chooser' %}
   </div>
 
   <div id="footer">

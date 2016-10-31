@@ -1,0 +1,24 @@
+
+{% if url === '/answer_notification_shoppers' %}
+  {% include '../templates/answer_notification_shoppers' %}
+{% elsif url === '/answer_request_shoppers' %}
+  {% include '../templates/answer_request_shoppers' %}
+{% elsif url === '/comment_notification' %}
+  {% include '../templates/comment_notification' %}
+{% elsif url === '/coupons_notification' %}
+  {% include '../templates/coupons_notification' %}
+{% elsif url === '/mail_after_invoice' %}
+  {% include '../templates/mail_after_invoice' %}
+{% elsif url === '/map_14' %}
+  {% include '../templates/map_14' %}
+{% elsif url === '/map_21' %}
+  {% include '../templates/map_21' %}
+{% elsif url === '/question_confirmation' %}
+  {% include '../templates/question_confirmation' %}
+{% elsif url === '/review_confirmation' %}
+  {% include '../templates/review_confirmation' %}
+{% elsif url === '/targeted_product_review_request' %}
+  {% include '../templates/targeted_product_review_request' %}
+{% elsif url === '/testimonials_request' %}
+  {% include '../templates/testimonials_request' %}
+{% endif %}
